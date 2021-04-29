@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-number = 3.14159
-print('{:.2f}'.format(number))
+Float: = 3.14159
+print('{:.2f}'.format(Float:))
