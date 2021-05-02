@@ -7,10 +7,10 @@ if number < 0:
     last = (number % 10) * -1
 else:
     last = (number % 10)
-
+str = "Last digit of {:d} is {:d}".format(number, last)
 if last > 5:
-    print("Last digit of {:d} is {:d}".format(number, last), "and is greater than 5")
+    print(str, "and is greater than 5")
 elif last == 0:
-    print("Last digit of {:d} is {:d}".format(number, last), "and is 0")
+    print(str, "and is 0")
 elif last < 6:
-    print("Last digit of {:d} is {:d}".format(number, last), "and is less than 6 and not 0")
+    print(str, "and is less than 6 and not 0")
