@@ -1,4 +1,4 @@
-<p align="center"><img src='https://img.icons8.com/nolan/452/python.png' alt='Banner' width=30%></p>
+<p align="center"><img src='https://img.icons8.com/nolan/452/python.png' alt='Banner' width=10%></p>
 
 # 0x02. Python - import & modules
 
