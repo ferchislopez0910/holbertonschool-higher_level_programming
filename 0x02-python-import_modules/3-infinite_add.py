@@ -5,7 +5,7 @@ if __name__ == "__main__":
     argument = (sys.argv)
     if argument == 1:
         print('0')
-    else:   
+    else:
         sum = 0
         for i in (1, ln):
             sum += (int(sys.argv[i]))
