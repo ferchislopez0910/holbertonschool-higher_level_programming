@@ -1,4 +1,2 @@
 #!/usr/bin/python3
-f = open(1, 'a')
-f.write('#pythoniscool')
-f.close()
+open(1, 'a').write('#pythoniscool')
