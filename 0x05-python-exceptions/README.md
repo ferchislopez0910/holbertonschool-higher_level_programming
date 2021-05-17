@@ -33,8 +33,8 @@ In this repo, you will find the following topics:
 
 <p aling="center">
 <a href="https://www.holbertonschool.com" target="_blank">
-<img src="http://www.holbertonschool.com/holberton-logo.png" alt="Holberton School"/></a>
-*:sparkles: Follow me *[Twitter](https://twitter.com/ferchislopez910)*
+<img src="http://www.holbertonschool.com/holberton-logo.png" alt="Holberton School"
+*:sparkles: Follow me *[Twitter](https://twitter.com/ferchislopez910)*/></a>
 </p>
 
 <p>resource:
