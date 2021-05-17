@@ -33,7 +33,7 @@ In this repo, you will find the following topics:
 
 <p aling="center">
 <a href="https://www.holbertonschool.com" target="_blank">
-*:sparkles: Follow me *[Twitter](https://twitter.com/ferchislopez910)/></a>
+*:sparkles: Follow me *[Twitter](https://twitter.com/ferchislopez910)</a>
 </p>
 
 <p>resource:
