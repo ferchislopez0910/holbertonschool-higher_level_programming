@@ -4,4 +4,5 @@ class Square:
 
     defines a square"""
     def __init__(self, size):
+        """Created a module"""
         self.__size = size
