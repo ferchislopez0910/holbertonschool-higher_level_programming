@@ -15,6 +15,10 @@ class Square:
                 raise ValueError("size must be >= 0")
         else:
             raise TypeError("size must be an integer")
+        for itera in position:
+            if type(itera) is not int or itera < 0 or len(position) != 2:
+                raise TypeError(
+                    "position must be a tuple of 2 positive integers")
 
     def area(self):
         """Def del area"""
@@ -39,14 +43,15 @@ class Square:
         """Def del my_print"""
         if self.size == 0:
             print('')
-        for k in range(self.__position[1]):
-            print('')
-        for i in range(self.size):
-            for l in range(self.__position[0]):
-                print(' ', end='')
-            for j in range(self.size):
-                print('#', end="")
-            print('')
+        else:
+            for k in range(self.__position[1]):
+                print('')
+            for i in range(self.size):
+                for l in range(self.__position[0]):
+                    print(' ', end='')
+                for j in range(self.size):
+                    print('#', end="")
+                print('')
 
     @property
     def position(self):
@@ -56,8 +61,8 @@ class Square:
     @position.setter
     def position(self, value):
         """Def del value"""
-        if isinstance(value, int):
-            self.__position = value
-            if value < 0:
+        self.__position = value
+        for itera in value:
+            if type(itera) is not int or itera < 0 or len(value) != 2:
                 raise TypeError(
                     "position must be a tuple of 2 positive integers")
