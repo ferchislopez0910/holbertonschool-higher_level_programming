@@ -36,6 +36,7 @@ class Square:
             raise TypeError("size must be an integer")
 
     def my_print(self):
+        """Def del my_print"""
         if self.size == 0:
             print('')
         for k in range(self.__position[1]):
@@ -49,6 +50,7 @@ class Square:
 
     @property
     def position(self):
+        """Def del position"""
         return self.__position
 
     @position.setter
