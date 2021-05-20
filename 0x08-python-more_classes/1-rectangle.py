@@ -7,21 +7,21 @@ class Rectangle:
 
     defines a square"""
     def __init__(self, width=0, height=0):
-        #Created the module
+        # Created the module
         if isinstance(height, int):
             self.__height = height
             if height < 0:
                 raise ValueError("size must be >= 0")
         else:
             raise TypeError("size must be an integer")
-        
+
         if isinstance(width, int):
             self.__width = width
             if width < 0:
                 raise ValueError("size must be >= 0")
         else:
             raise TypeError("size must be an integer")
-  
+
     @property
     def width(self):
         """Def del width"""
@@ -36,7 +36,7 @@ class Rectangle:
                 raise ValueError("size must be >= 0")
         else:
             raise TypeError("size must be an integer")
-    
+
     @property
     def height(self):
         """Def del height"""
