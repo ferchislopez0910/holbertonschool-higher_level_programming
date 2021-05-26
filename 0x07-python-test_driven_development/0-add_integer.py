@@ -8,7 +8,7 @@ return a + b
 
 def add_integer(a, b=98):
     """
-    return that adds 2 integers.   
+    return that adds 2 integers.
     """
     if type(a) is float:
         a = int(a)
