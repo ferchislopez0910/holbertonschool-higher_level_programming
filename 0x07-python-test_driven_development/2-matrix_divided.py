@@ -20,6 +20,9 @@ def matrix_divided(matrix, div):
     if div == 0:
         raise ZeroDivisionError("division by zero")
 
+    if type(matrix) is not list:
+        raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+
     for row in matrix:
         new_list = []
         if len(row) == ln:
