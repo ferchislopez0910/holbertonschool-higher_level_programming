@@ -3,11 +3,11 @@
 ======================
 
 # Used "matrix_divided"
--------------------
 
 This is a file text in format txt
 
 How to Used:
+
 >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
 
 # List of Lists of integers / div= integer
@@ -30,7 +30,7 @@ ZeroDivisionError: division by zero
 >>> matrix_divided(['1,2','3,4'], 3)
 Traceback (most recent call last):
 ...
-TypeError: matrix must be a matrix (list of lists of integers/floats
+TypeError: matrix must be a matrix (list of lists) of integers/floats
 
 # list of lists of integers but not rectangular / div= integer => TypeError: matrix must have each row with the same
 >>> matrix_divided([[1,2],[]], 3)
