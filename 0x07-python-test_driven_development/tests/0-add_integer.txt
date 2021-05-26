@@ -34,6 +34,4 @@ NameError: name 'hi' is not defined
 >>> add_integer(-1, -4.5)
 -5
 >>> add_integer(-1)
-Traceback (most recent call last):
-...
-TypeError: b must be an integer
+97
