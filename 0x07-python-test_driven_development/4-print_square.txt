@@ -1,0 +1,31 @@
+"""function that matrix_divided."""
+
+======================
+
+# Used "matrix_divided"
+
+This is a file text in format txt
+
+How to Used:
+
+>>> print_square = __import__('4-print_square').print_square
+# Print with a neg number
+>>> print_square(-2)
+Traceback (most recent call last):
+...
+TypeError: size must be >= 0
+
+# Print with str
+>>> print_square("3")
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+# missing one argument
+>>> print_square()       
+Traceback (most recent call last):
+...
+TypeError: print_square() missing 1 required positional argument: 'size'
+
+
+
