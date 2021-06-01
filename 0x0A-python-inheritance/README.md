@@ -68,8 +68,8 @@ In this repo, you will find the following topics:
 #### Software Academy 👨‍💻
 
 <p aling="center">
-<a href="https://www.holbertonschool.com" target="_blank">
-*:sparkles: Follow me *[Twitter](https://twitter.com/ferchislopez910)</a>
+<a :sparkles: Follow me *[Twitter] href="https://twitter.com/ferchislopez910" target="_blank">
+</a>
 </p>
 
 <p>resource:
