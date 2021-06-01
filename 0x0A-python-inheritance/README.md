@@ -68,10 +68,10 @@ In this repo, you will find the following topics:
 #### Software Academy 👨‍💻
 
 <p aling="center">
-:sparkles: Follow me *[Twitter] 
-<a href="https://twitter.com/ferchislopez910" target="_blank">
-</a>
-</p>
+<a>
+<img src="https://i.pinimg.com/originals/ba/46/c8/ba46c8090ccc536ef26c005f9f2fc404.gif" alt="Twitter" width=10% /></a>
+*:sparkles: Follow me *[Twitter](https://twitter.com/ferchislopez910)*
+*<p aling="center">
 
 <p>resource:
 https://docs.python.org/3.4/tutorial/classes.html#inheritance
