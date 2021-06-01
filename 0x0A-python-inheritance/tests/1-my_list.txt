@@ -10,6 +10,7 @@ This is a file text in format txt
 How to Used:
 >>> MyList = __import__('1-my_list').MyList
 
+# Created list
 >>> my_list = MyList()
 >>> my_list.append(1)
 >>> my_list.append(4)
@@ -23,6 +24,7 @@ How to Used:
 >>> print(my_list)
 [1, 4, 2, 3, 5]
 
+# empty list
 >>> my_list = MyList()
 >>> print(my_list)
 []
@@ -31,15 +33,16 @@ How to Used:
 >>> print(my_list)
 []
 
+# float and neg numbers
 >>> my_list = MyList()
 >>> my_list.append(1.2)
 >>> my_list.append(2.0)
 >>> my_list.append(2.6)
->>> my_list.append(3)
->>> my_list.append(5)
+>>> my_list.append(-3)
+>>> my_list.append(-5)
 >>> print(my_list)
-[1.2, 2.0, 2.6, 3, 5]
+[1.2, 2.0, 2.6, -3, -5]
 >>> my_list.print_sorted()
-[1.2, 2.0, 2.6, 3, 5]
+[-5, -3, 1.2, 2.0, 2.6]
 >>> print(my_list)
-[1.2, 2.0, 2.6, 3, 5]
+[1.2, 2.0, 2.6, -3, -5]
