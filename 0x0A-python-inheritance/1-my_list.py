@@ -7,4 +7,5 @@ Write a class MyList that inherits from list
 class MyList(list):
     """MyList that inherits from list"""
     def print_sorted(self):
+        """print sorter"""
         print(sorted(self))
