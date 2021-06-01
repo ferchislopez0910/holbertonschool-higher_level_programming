@@ -68,7 +68,8 @@ In this repo, you will find the following topics:
 #### Software Academy 👨‍💻
 
 <p aling="center">
-<a :sparkles: Follow me *[Twitter] href="https://twitter.com/ferchislopez910" target="_blank">
+:sparkles: Follow me *[Twitter] 
+<a href="https://twitter.com/ferchislopez910" target="_blank">
 </a>
 </p>
 
