@@ -9,45 +9,46 @@ This is a file text in format txt
 
 How to Used:
 >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
-
 >>> bg = BaseGeometry()
->>> bg.integer_validator("my_int", 12)
 
->>> bg = BaseGeometry()
->>> bg.integer_validator("my_int", -12)
+# 2 strings
+>>> bg.integer_validator("Hello", "True")
 Traceback (most recent call last):
 ...
-ValueError: my_int must be greater than 0
+TypeError: Hello must be an integer
 
->>> bg = BaseGeometry()
->>> bg.integer_validator("my_int", -1.2)
-Traceback (most recent call last):
-...
-TypeError: my_int must be an integer
-
->>> bg = BaseGeometry()
->>> bg.integer_validator("my_int",)
-Traceback (most recent call last):
-...
-TypeError: integer_validator() missing 1 required positional argument: 'value'
-
->>> bg = BaseGeometry()
->>> bg.integer_validator("my_int", 12, 21)
-Traceback (most recent call last):
-...
-TypeError: integer_validator() takes 3 positional arguments but 4 were given
-
->>> bg = BaseGeometry()
->>> bg.integer_validator(12, 21)
-
->>> bg = BaseGeometry()
+# empty
 >>> bg.integer_validator()
 Traceback (most recent call last):
 ...
 TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
 
->>> bg = BaseGeometry()
->>> bg.integer_validator("Hello", True)
+#integer
+>>> bg.integer_validator(12, 21)
+>>>
+
+#float
+>>> bg.integer_validator(1.2, 2.1)
 Traceback (most recent call last):
 ...
-TypeError: Hello must be an integer
+TypeError: 1.2 must be an integer
+
+#negative
+>>> bg.integer_validator(-12, -21)
+Traceback (most recent call last):
+...
+ValueError: -12 must be greater than 0
+
+# List
+>>> bg.integer_validator((12, 21), (21, 12))
+Traceback (most recent call last):
+...
+TypeError: (12, 21) must be an integer
+
+# more 2 arguments
+>>> bg.integer_validator("Hello", 2, 12)
+Traceback (most recent call last):
+...
+TypeError: integer_validator() takes 3 positional arguments but 4 were given
+
+
