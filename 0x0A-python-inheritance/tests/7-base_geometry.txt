@@ -73,3 +73,8 @@ TypeError: Hi must be an integer
 Traceback (most recent call last):
 ...
 TypeError: 2 must be an integer
+
+>>> bg.integer_validator({"a": 1}, (1, 2))
+Traceback (most recent call last):
+...
+TypeError: {'a': 1} must be an integer
