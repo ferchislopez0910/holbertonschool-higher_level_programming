@@ -51,4 +51,25 @@ Traceback (most recent call last):
 ...
 TypeError: integer_validator() takes 3 positional arguments but 4 were given
 
+# one arguments
+>>> bg.integer_validator("Hello")
+Traceback (most recent call last):
+...
+TypeError: integer_validator() missing 1 required positional argument: 'value'
 
+# zero, zero
+>>> bg.integer_validator(0, 0)
+Traceback (most recent call last):
+...
+ValueError: 0 must be greater than 0
+
+#bool
+>>> bg.integer_validator("Hi", True)
+Traceback (most recent call last):
+...
+TypeError: Hi must be an integer
+
+>>> bg.integer_validator(2, {4:True, 3:False})
+Traceback (most recent call last):
+...
+TypeError: 2 must be an integer
