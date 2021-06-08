@@ -6,6 +6,7 @@ import unittest
 from models.base import Base
 from models.rectangle import Rectangle
 
+
 class TestRectangle(unittest.TestCase):
     def Rectangle(self):
         r1 = Rectangle(10, 2)
@@ -14,7 +15,7 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(r1.height, 2)
         self.assertEqual(r1.x, 0)
         self.assertEqual(r1.y, 0)
-        
+
         r2 = Rectangle(2, 10)
         self.assertEqual(r1.id, 2)
         self.assertEqual(r1.width, 2)
@@ -28,7 +29,7 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(r1.height, 2)
         self.assertEqual(r1.x, 0)
         self.assertEqual(r1.y, 0)
-    
+
     def Raises(self):
         r1 = Rectangle("10", 2)
         self.assertRaises(TypeError, r1.width)
