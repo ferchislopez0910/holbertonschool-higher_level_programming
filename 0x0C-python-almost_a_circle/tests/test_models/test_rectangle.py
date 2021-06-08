@@ -8,7 +8,8 @@ from models.rectangle import Rectangle
 
 
 class TestRectangle(unittest.TestCase):
-    def Rectangle(self):
+    """test rectangle"""
+    def test_Rectangle(self):
         r1 = Rectangle(10, 2)
         self.assertEqual(r1.id, 1)
         self.assertEqual(r1.width, 10)
@@ -30,7 +31,7 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(r1.x, 0)
         self.assertEqual(r1.y, 0)
 
-    def Raises(self):
+    def test_Raises(self):
         r1 = Rectangle("10", 2)
         self.assertRaises(TypeError, r1.width)
         r2 = Rectangle(10, -2)
@@ -38,7 +39,7 @@ class TestRectangle(unittest.TestCase):
         r3 = Rectangle(10, 2, 3, -1)
         self.assertRaises(ValueError, r3.x)
 
-    def area(self):
+    def test_area(self):
         r1 = Rectangle(3, 2)
         self.assertEqual(r1.area(), 6)
 
