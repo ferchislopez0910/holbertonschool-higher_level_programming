@@ -5,17 +5,13 @@ from models.base import Base
 
 class Rectangle(Base):
     """ class Rectangle that inherits from Base"""
-    __width = None
-    __height = None
-    __x = 0
-    __y = 0
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """ First Rectangle """
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
         super().__init__(id)
 
     @property
@@ -53,7 +49,7 @@ class Rectangle(Base):
     def x(self, value):
         if type(value) is not int:
             raise TypeError("x must be an integer")
-        if value <= 0:
+        if value < 0:
             raise ValueError("x must be >= 0")
         self.__x = value
 
@@ -66,7 +62,7 @@ class Rectangle(Base):
     def y(self, value):
         if type(value) is not int:
             raise TypeError("y must be an integer")
-        if value <= 0:
+        if value < 0:
             raise ValueError("y must be >= 0")
         self.__y = value
 
