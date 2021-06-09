@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-from models.rectangle import Rectangle
 """ Square that inherits from Rectangle """
+from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
@@ -17,6 +17,7 @@ class Square(Rectangle):
     @size.setter
     def size(self, value):
         self.width = value
+        self.height = value
 
     def __str__(self):
         """ method so that it returns [Rectangle] """
