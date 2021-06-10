@@ -33,5 +33,9 @@ class Square(Rectangle):
                 setattr(self, valarg[i], args[i])
         else:
             for key, value in kwargs.items():
-                if key in val:
-                    setattr(self, key, value)
+                setattr(self, key, value)
+    
+    def to_dictionary(self):
+        """pdate the class Rectangle by adding the public method"""
+        return self.__dict__
+
