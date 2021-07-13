@@ -1,4 +1,4 @@
-<p align="center"><img src='https://media.giphy.com/media/vISmwpBJUNYzukTnVx/giphy.gif' alt='Banner' width=10%></p>
+<p align="center"><img src='https://media.giphy.com/media/vISmwpBJUNYzukTnVx/giphy.gif' alt='Banner' width=100%></p>
 
 # 0x0E. SQL - More queries
 
