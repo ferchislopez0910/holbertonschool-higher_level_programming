@@ -2,31 +2,32 @@
 // Create an instance method called print() that prints the rectangle using the character X
 
 class Rectangle {
-  constructor(w, h) {
+  constructor (w, h) {
     if (w > 0 && h > 0) {
       this.width = w;
       this.height = h;
     }
   }
 
-  print() {
+  print () {
     for (let i = 0; i < this.height; i++) {
-      let rect = "";
+      let rect = '';
       for (let j = 0; j < this.width; j++) {
-        rect += "X";
+        rect += 'X';
       }
       console.log(rect);
     }
   }
-  rotate() {
-    let saveVale = this.height;
+
+  rotate () {
+    const saveVale = this.height;
     this.height = this.width;
     this.width = saveVale;
   }
-  double() {
-	this.height = this.height * 2;
-	this.width = this.width * 2;
-  }
 
+  double () {
+    this.height = this.height * 2;
+    this.width = this.width * 2;
+  }
 }
 module.exports = Rectangle;
