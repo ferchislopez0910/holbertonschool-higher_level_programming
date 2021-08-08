@@ -21,7 +21,8 @@ if __name__ == "__main__":
         """Fetch a single row using fetchone() method."""
         query_rows = cur.fetchall()
         for row in query_rows:
-            print(row)
+            if row[1][0] == 'N':
+                print(row)
 
         """disconnect from server"""
         cur.close()
