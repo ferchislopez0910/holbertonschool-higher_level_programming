@@ -18,7 +18,7 @@ if __name__ == "__main__":
         cur = conn.cursor()
         """ execute SQL query using execute() method."""
         cur.execute(
-            "SELECT * FROM states WHERE name = '%s' ORDER BY id ASC" % search)
+            "SELECT * FROM states WHERE name = '{}' ORDER BY id ASC".format(search))
 
         """Fetch a single row using fetchone() method."""
         query_rows = cur.fetchall()
