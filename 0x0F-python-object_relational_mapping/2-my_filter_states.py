@@ -1,14 +1,14 @@
 #!/usr/bin/python3
 """cript that lists all states from the database hbtn_0e_0_usa"""
 
-import sys
+from sys import argv
 import MySQLdb
 if __name__ == "__main__":
-    if len(sys.argv) == 5:
-        username = sys.argv[1]
-        password = sys.argv[2]
-        database = sys.argv[3]
-        search = sys.argv[4]
+    if len(argv) == 5:
+        username = argv[1]
+        password = argv[2]
+        database = argv[3]
+        search = argv[4]
         server = "localhost"
         """Open database connection"""
         conn = MySQLdb.connect(host=server, port=3306, user=username,
@@ -24,7 +24,8 @@ if __name__ == "__main__":
         """Fetch a single row using fetchone() method."""
         query_rows = cur.fetchall()
         for row in query_rows:
-            print(row)
+            if row[1] == search:
+                print(row)
 
         """disconnect from server"""
         cur.close()
