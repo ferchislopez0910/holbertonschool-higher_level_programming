@@ -8,7 +8,7 @@ if __name__ == "__main__":
         username = argv[1]
         password = argv[2]
         database = argv[3]
-        server = "localhost2"
+        server = "localhost"
         """Open database connection"""
         conn = MySQLdb.connect(host=server, port=3306, user=username,
                                passwd=password, db=database, charset="utf8")
