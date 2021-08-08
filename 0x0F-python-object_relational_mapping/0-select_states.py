@@ -9,7 +9,7 @@ if len(sys.argv) == 4:
 	password = sys.argv[2]
 	database = sys.argv[3]
 	"""Open database connection"""
-	conn = MySQLdb.connect(host="localhost2", port=3306, user=username,
+	conn = MySQLdb.connect(host="localhost", port=3306, user=username,
 						   passwd=password, db=database, charset="utf8")
 
 	""" prepare a cursor object using cursor() method"""
