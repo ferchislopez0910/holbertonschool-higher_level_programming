@@ -9,7 +9,7 @@ if __name__ == "__main__":
         password = argv[2]
         database = argv[3]
         search = argv[4]
-        server = "localhost2"
+        server = "localhost"
         """Open database connection"""
         conn = MySQLdb.connect(host=server, port=3306, user=username,
                                passwd=password, db=database,  charset="utf8")
