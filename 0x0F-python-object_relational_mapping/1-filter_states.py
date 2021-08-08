@@ -3,29 +3,29 @@
 
 import sys
 import MySQLdb
+if __name__ == "__main__":
+    if len(sys.argv) == 4:
+        username = sys.argv[1]
+        password = sys.argv[2]
+        database = sys.argv[3]
+        """Open database connection"""
+        conn = MySQLdb.connect(host="localhost", port=3306, user=username,
+                               passwd=password, db=database, charset="utf8")
 
-if len(sys.argv) == 4:
-    username = sys.argv[1]
-    password = sys.argv[2]
-    database = sys.argv[3]
-    """Open database connection"""
-    conn = MySQLdb.connect(host="localhost", port=3306, user=username,
-                           passwd=password, db=database, charset="utf8")
+        """ prepare a cursor object using cursor() method"""
+        cur = conn.cursor()
+        """ execute SQL query using execute() method."""
+        cur.execute(
+            "SELECT * FROM states WHERE name like 'N%' ORDER BY id ASC")
 
-    """ prepare a cursor object using cursor() method"""
-    cur = conn.cursor()
-    """ execute SQL query using execute() method."""
-    cur.execute(
-        "SELECT * FROM states WHERE name like 'N%' ORDER BY id ASC")
+        """Fetch a single row using fetchone() method."""
+        query_rows = cur.fetchall()
+        for row in query_rows:
+            print(row)
 
-    """Fetch a single row using fetchone() method."""
-    query_rows = cur.fetchall()
-    for row in query_rows:
-        print(row)
+        """disconnect from server"""
+        cur.close()
+        conn.close()
 
-    """disconnect from server"""
-    cur.close()
-    conn.close()
-
-else:
-    print("Error - Introduce los argumentos correctamente")
+    else:
+        print("Error - Introduce los argumentos correctamente")
