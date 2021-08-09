@@ -28,6 +28,6 @@ if __name__ == "__main__":
             State.name.like(want_a)).order_by(State.id)
         for state in result:
             print("{}: {}".format(state.id, state.name))
-
+        session.close()
     else:
         print("Error - Introduce los argumentos correctamente")
