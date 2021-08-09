@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 """Consult all cities'"""
-from sys import argv
-from sqlalchemy.orm import Session, sessionmaker
+import sqlalchemy
 from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
 from relationship_state import Base, State
 from relationship_city import City
+from sys import argv
 
 if __name__ == "__main__":
     """Consult with method Session of Alchemist"""
@@ -12,7 +13,7 @@ if __name__ == "__main__":
         username = argv[1]
         password = argv[2]
         database = argv[3]
-        server = "localhost2"
+        server = "localhost"
         engine = create_engine('mysql+mysqldb://{}:{}@{}/{}'.format(
             username, password, server, database), pool_pre_ping=True)
         """Verifica que la tabla este creada en la bd"""
