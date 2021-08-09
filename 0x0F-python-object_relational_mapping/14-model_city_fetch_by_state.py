@@ -1,12 +1,10 @@
 #!/usr/bin/python3
 """Consult all cities'"""
-import sqlalchemy
 from sys import argv
-from model_state import Base, State
 from sqlalchemy.orm import Session, sessionmaker
-from sqlalchemy import (create_engine)
+from sqlalchemy import create_engine
+from model_state import Base, State
 from model_city import City
-
 
 if __name__ == "__main__":
     """Consult with method Session of Alchemist"""
